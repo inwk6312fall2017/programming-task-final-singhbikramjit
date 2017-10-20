@@ -12,7 +12,7 @@ def comparelong():
      print("long word in book1 is"  ,long1)
      print("length is ",len(long1))
 
-     f1.close()
+     
 
 
      long2=''
@@ -22,7 +22,7 @@ def comparelong():
         long2=word
      print("long word in biik2 is"  ,long2)
      print("length is ",len(long2))
-     f2.close()
+     
 
 
 
@@ -33,7 +33,16 @@ def comparelong():
         long3=word
      print("long word in book3 is"  ,long3)
      print("length is ",len(long3))
-     f3.close()
+     print("FINNALY THE LONGEST WORD AMONG THREE BOOKS ARE")
+     if long1 > long2 and long1>long3:
+         print("The longest word is  in Book1 ie. ",long1) 
+     
+     elif long2 > long3 and long2>long1: 
+         print("The longest word is  in Book2 ie. ",long2) 
+       
+     else:
+        print("The longest word is in Book3 ie. ",long3)    
 
+     
 
 comparelong()
